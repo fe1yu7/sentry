@@ -2,13 +2,11 @@ import React from 'react';
 import {IconProps} from '../types/iconProps';
 import theme from '../utils/theme';
 
-export const IconActivity: React.FunctionComponent<IconProps> = ({
-  // eslint-disable-next-line react/prop-types
+export const IconActivity: React.FC<IconProps> = ({
   color: providedColor = theme.gray6,
-  // eslint-disable-next-line react/prop-types
   size: providedSize = 'sm',
   ...other
-}) => {
+}: IconProps) => {
   const color = providedColor;
   const size =
     typeof providedSize === 'string' ? theme.iconSizes[providedSize] : providedSize;
