@@ -17,6 +17,7 @@ import Feature from 'app/components/acl/feature';
 import HookStore from 'app/stores/hookStore';
 import InlineSvg from 'app/components/inlineSvg';
 import {IconActivity} from 'app/icons/iconActivity';
+import {IconDashboard} from 'app/icons/iconDashboard';
 import PreferencesStore from 'app/stores/preferencesStore';
 import SentryTypes from 'app/sentryTypes';
 import space from 'app/styles/space';
@@ -255,7 +256,7 @@ class Sidebar extends React.Component {
                     {...sidebarItemProps}
                     index
                     onClick={this.hidePanel}
-                    icon={<InlineSvg src="icon-projects" />}
+                    icon={<IconDashboard />}
                     label={t('Projects')}
                     to={`/organizations/${organization.slug}/projects/`}
                   />

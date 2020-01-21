@@ -3,7 +3,7 @@ import {IconProps} from '../types/iconProps';
 import theme from '../utils/theme';
 
 export const IconActivity: React.FC<IconProps> = ({
-  color: providedColor = theme.gray6,
+  color: providedColor = 'currentColor',
   size: providedSize = 'sm',
   ...other
 }: IconProps) => {
