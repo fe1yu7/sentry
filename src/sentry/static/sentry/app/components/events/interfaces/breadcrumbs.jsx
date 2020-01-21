@@ -4,6 +4,7 @@ import EventDataSection from 'app/components/events/eventDataSection';
 import SentryTypes from 'app/sentryTypes';
 import GuideAnchor from 'app/components/assistant/guideAnchor';
 import Breadcrumb from 'app/components/events/interfaces/breadcrumbs/breadcrumb';
+import {IconSearch} from 'app/icons/iconSearch';
 import {t, tct} from 'app/locale';
 import {PlatformContext} from 'app/components/events/interfaces/breadcrumbs/platformContext';
 
@@ -157,7 +158,7 @@ class BreadcrumbsInterface extends React.Component {
           value={this.state.queryValue}
           onChange={this.setQuery}
         />
-        <span className="icon-search" />
+        <IconSearch />
         {this.state.queryValue && (
           <div>
             <a className="search-clear-form" onClick={this.clearSearch}>

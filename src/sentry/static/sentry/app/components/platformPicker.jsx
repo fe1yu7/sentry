@@ -10,10 +10,10 @@ import {t, tct} from 'app/locale';
 import Button from 'app/components/button';
 import EmptyMessage from 'app/views/settings/components/emptyMessage';
 import ExternalLink from 'app/components/links/externalLink';
-import InlineSvg from 'app/components/inlineSvg';
 import ListLink from 'app/components/links/listLink';
 import NavTabs from 'app/components/navTabs';
 import PlatformIconTile from 'app/components/platformIconTile';
+import {IconSearch} from 'app/icons/iconSearch';
 import categoryList from 'app/data/platformCategories';
 import platforms from 'app/data/platforms';
 import space from 'app/styles/space';
@@ -96,7 +96,7 @@ class PlatformPicker extends React.Component {
             ))}
           </CategoryNav>
           <SearchBar>
-            <InlineSvg src="icon-search" />
+            <IconSearch />
             <input
               type="text"
               ref={this.searchInput}

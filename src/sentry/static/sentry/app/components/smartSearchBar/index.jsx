@@ -33,6 +33,7 @@ import DropdownLink from 'app/components/dropdownLink';
 import MemberListStore from 'app/stores/memberListStore';
 import SentryTypes from 'app/sentryTypes';
 import space from 'app/styles/space';
+import {IconSearch} from 'app/icons/iconSearch';
 import theme from 'app/utils/theme';
 import withApi from 'app/utils/withApi';
 import withOrganization from 'app/utils/withOrganization';
@@ -960,7 +961,7 @@ class SmartSearchBar extends React.Component {
         isOpen={this.state.dropdownVisible}
       >
         <SearchLabel htmlFor="smart-search-input" aria-label={t('Search events')}>
-          <SearchSvg src="icon-search" />
+          <StyledIconSearch />
         </SearchLabel>
 
         {useFormWrapper ? (
@@ -1242,7 +1243,7 @@ const SearchLabel = styled('label')`
   color: ${p => p.theme.gray2};
 `;
 
-const SearchSvg = styled(InlineSvg)`
+const StyledIconSearch = styled(IconSearch)`
   margin-top: ${space(0.25)};
   margin-left: ${space(0.25)};
 `;
