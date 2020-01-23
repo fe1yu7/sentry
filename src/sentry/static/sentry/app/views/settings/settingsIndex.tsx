@@ -14,6 +14,7 @@ import InlineSvg from 'app/components/inlineSvg';
 import Link from 'app/components/links/link';
 import LoadingIndicator from 'app/components/loadingIndicator';
 import {Panel, PanelBody, PanelHeader} from 'app/components/panels';
+import {IconSupport} from 'app/icons/iconSupport';
 import overflowEllipsis from 'app/styles/overflowEllipsis';
 import SentryTypes from 'app/sentryTypes';
 import SettingsLayout from 'app/views/settings/components/settingsLayout';
@@ -198,7 +199,7 @@ class SettingsIndex extends React.Component<Props> {
               <HomePanelHeader>
                 <SupportLinkComponent isCentered {...supportLinkProps}>
                   <HomeIcon color="purple">
-                    <InlineSvg src="icon-support" size="48px" />
+                    <IconSupport size="xl" />
                   </HomeIcon>
                   {t('Support')}
                 </SupportLinkComponent>

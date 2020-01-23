@@ -4,7 +4,8 @@ import isPropValid from '@emotion/is-prop-valid';
 
 import {t} from 'app/locale';
 import Link from 'app/components/links/link';
-import InlineSvg from 'app/components/inlineSvg';
+import {IconPrevious} from 'app/icons/iconPrevious';
+import {IconNext} from 'app/icons/iconNext';
 import space from 'app/styles/space';
 import {Event, Organization} from 'app/types';
 
@@ -69,7 +70,7 @@ const Pagination = (props: Props) => {
         to={links.oldest}
         disabled={links.previous === null || links.oldest === null}
       >
-        <InlineSvg src="icon-prev" />
+        <IconPrevious />
       </StyledIconLink>
       <StyledTextLink
         data-test-id="older-event"
@@ -90,7 +91,7 @@ const Pagination = (props: Props) => {
         disabled={links.next === null || links.latest === null}
         isLast
       >
-        <InlineSvg src="icon-next" />
+        <IconNext />
       </StyledIconLink>
     </Paginator>
   );

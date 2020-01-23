@@ -14,8 +14,9 @@ import Button from 'app/components/button';
 import Clipboard from 'app/components/clipboard';
 import Confirm from 'app/components/confirm';
 import EmptyMessage from 'app/views/settings/components/emptyMessage';
-import InlineSvg from 'app/components/inlineSvg';
 import {IconCopy} from 'app/icons/iconCopy';
+import {IconPrint} from 'app/icons/iconPrint';
+import {IconDownload} from 'app/icons/iconDownload';
 import space from 'app/styles/space';
 
 class RecoveryCodes extends React.Component {
@@ -53,14 +54,14 @@ class RecoveryCodes extends React.Component {
               </Button>
             </Clipboard>
             <Button size="small" onClick={this.printCodes}>
-              <InlineSvg src="icon-print" />
+              <IconPrint />
             </Button>
             <Button
               size="small"
               download="sentry-recovery-codes.txt"
               href={`data:text/plain;charset=utf-8,${formattedCodes}`}
             >
-              <InlineSvg src="icon-download" />
+              <IconDownload />
             </Button>
             <Confirm
               onConfirm={this.props.onRegenerateBackupCodes}
