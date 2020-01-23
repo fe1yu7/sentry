@@ -15,6 +15,7 @@ import Clipboard from 'app/components/clipboard';
 import Confirm from 'app/components/confirm';
 import EmptyMessage from 'app/views/settings/components/emptyMessage';
 import InlineSvg from 'app/components/inlineSvg';
+import {IconCopy} from 'app/icons/iconCopy';
 import space from 'app/styles/space';
 
 class RecoveryCodes extends React.Component {
@@ -48,7 +49,7 @@ class RecoveryCodes extends React.Component {
           <Actions>
             <Clipboard hideUnsupported value={formattedCodes}>
               <Button size="small">
-                <InlineSvg src="icon-copy" />
+                <IconCopy />
               </Button>
             </Clipboard>
             <Button size="small" onClick={this.printCodes}>
