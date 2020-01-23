@@ -242,9 +242,8 @@ exports[`SettingsIndex renders 1`] = `
             <HomeIcon
               color="purple"
             >
-              <InlineSvg
-                size="48px"
-                src="icon-support"
+              <IconSupport
+                size="xl"
               />
             </HomeIcon>
             Support
