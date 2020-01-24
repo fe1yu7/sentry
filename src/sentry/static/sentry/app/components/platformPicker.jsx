@@ -9,6 +9,7 @@ import {inputStyles} from 'app/styles/input';
 import {t, tct} from 'app/locale';
 import Button from 'app/components/button';
 import EmptyMessage from 'app/views/settings/components/emptyMessage';
+import {IconProject} from 'app/icons/iconProject';
 import ExternalLink from 'app/components/links/externalLink';
 import ListLink from 'app/components/links/listLink';
 import NavTabs from 'app/components/navTabs';
@@ -127,7 +128,7 @@ class PlatformPicker extends React.Component {
         </PlatformList>
         {platformList.length === 0 && (
           <EmptyMessage
-            icon="icon-project"
+            icon={<IconProject />}
             title={t("We don't have an SDK for that yet!")}
           >
             {tct(

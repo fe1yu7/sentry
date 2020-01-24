@@ -16,6 +16,7 @@ import ProjectListItem from 'app/views/settings/components/settingsProjectItem';
 import {Panel, PanelHeader, PanelBody, PanelItem} from 'app/components/panels';
 import InlineSvg from 'app/components/inlineSvg';
 import Pagination from 'app/components/pagination';
+import {IconWarning} from 'app/icons/iconWarning';
 import {sortProjects} from 'app/utils';
 import {t} from 'app/locale';
 import withOrganization from 'app/utils/withOrganization';
@@ -114,7 +115,7 @@ class TeamProjects extends React.Component {
             : t('Successfully removed project from team')
         );
       },
-      error: e => {
+      error: () => {
         addErrorMessage(t("Wasn't able to change project association."));
       },
     });
@@ -138,7 +139,7 @@ class TeamProjects extends React.Component {
     const canWrite = access.has('org:write');
 
     return projects.length ? (
-      sortProjects(projects).map((project, i) => (
+      sortProjects(projects).map(project => (
         <StyledPanelItem key={project.id}>
           <ProjectListItem project={project} organization={organization} />
           <Tooltip
@@ -158,7 +159,7 @@ class TeamProjects extends React.Component {
         </StyledPanelItem>
       ))
     ) : (
-      <EmptyMessage size="large" icon="icon-circle-exclamation">
+      <EmptyMessage size="large" icon={<IconWarning />}>
         {t("This team doesn't have access to any projects.")}
       </EmptyMessage>
     );
@@ -206,7 +207,7 @@ class TeamProjects extends React.Component {
                   onSelect={this.handleProjectSelected}
                   emptyMessage={t('No projects')}
                 >
-                  {({isOpen, selectedItem}) => (
+                  {({isOpen}) => (
                     <DropdownButton isOpen={isOpen} size="xsmall">
                       {t('Add Project')}
                     </DropdownButton>

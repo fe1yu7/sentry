@@ -5,13 +5,13 @@ import styled from '@emotion/styled';
 import space from 'app/styles/space';
 import capitalize from 'lodash/capitalize';
 import Hovercard from 'app/components/hovercard';
-import InlineSvg from 'app/components/inlineSvg';
 import {IconBitbucket} from 'app/icons/iconBitbucket';
 import {IconGitlab} from 'app/icons/iconGitlab';
 import {IconGithub} from 'app/icons/iconGithub';
 import {IconJira} from 'app/icons/iconJira';
 import {IconVsts} from 'app/icons/iconVsts';
 import {IconGeneric} from 'app/icons/iconGeneric';
+import InlineSvg from 'app/components/inlineSvg';
 import {callIfFunction} from 'app/utils/callIfFunction';
 
 type Props = {
@@ -131,7 +131,7 @@ class IssueSyncListElement extends React.Component<Props> {
         </ClassNames>
         {this.props.onOpen && this.props.onClose && (
           <OpenCloseIcon
-            icon="icon-close"
+            src="icon-close"
             onClick={this.isLinked() ? this.handleDelete : this.props.onOpen}
             isLinked={this.isLinked()}
           />

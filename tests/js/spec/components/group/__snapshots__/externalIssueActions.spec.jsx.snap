@@ -199,15 +199,15 @@ exports[`ExternalIssueActions with no external issues linked renders 1`] = `
           </Hovercard>
         </ForwardRef(render)>
         <OpenCloseIcon
-          icon="icon-close"
           isLinked={false}
           onClick={[Function]}
+          src="icon-close"
         >
           <ForwardRef
             className="css-7qmpzh-InlineSvg-OpenCloseIcon euat0et2"
-            icon="icon-close"
             isLinked={false}
             onClick={[Function]}
+            src="icon-close"
           >
             <svg
               className="css-7qmpzh-InlineSvg-OpenCloseIcon euat0et2"

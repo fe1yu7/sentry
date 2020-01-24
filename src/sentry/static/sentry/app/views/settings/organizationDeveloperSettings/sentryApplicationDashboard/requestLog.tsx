@@ -16,6 +16,7 @@ import LoadingIndicator from 'app/components/loadingIndicator';
 import Checkbox from 'app/components/checkbox';
 import Button from 'app/components/button';
 import InlineSvg from 'app/components/inlineSvg';
+import {IconWarning} from 'app/icons/iconWarning';
 
 import space from 'app/styles/space';
 import {t} from 'app/locale';
@@ -261,7 +262,7 @@ export default class RequestLog extends AsyncComponent<Props, State> {
                   </PanelItem>
                 ))
               ) : (
-                <EmptyMessage icon="icon-circle-exclamation">
+                <EmptyMessage icon={<IconWarning />}>
                   {t('No requests found in the last 30 days.')}
                 </EmptyMessage>
               )}

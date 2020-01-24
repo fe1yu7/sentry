@@ -15,6 +15,7 @@ import overflowEllipsis from 'app/styles/overflowEllipsis';
 import Pagination from 'app/components/pagination';
 import RepositoryRow from 'app/components/repositoryRow';
 import {Panel, PanelBody, PanelHeader} from 'app/components/panels';
+import {IconCommit} from 'app/icons/iconCommit';
 import space from 'app/styles/space';
 import {t} from 'app/locale';
 import {Integration, Repository} from 'app/types';
@@ -228,7 +229,7 @@ export default class IntegrationRepos extends AsyncComponent<Props, State> {
           <PanelBody>
             {itemList.length === 0 && (
               <EmptyMessage
-                icon="icon-commit"
+                icon={<IconCommit />}
                 title={t('Sentry is better with commit data')}
                 description={t(
                   'Add a repository to begin tracking its commit data. Then, set up release tracking to unlock features like suspect commits, suggested issue owners, and deploy emails.'

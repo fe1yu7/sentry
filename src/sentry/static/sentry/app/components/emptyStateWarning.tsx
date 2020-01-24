@@ -12,11 +12,8 @@ type Props = {
 
 const EmptyStateWarning: React.FC<Props> = ({small, children}) =>
   small ? (
-    <EmptyMessage>
-      <SmallMessage>
-        <IconWarning size="xl" />
-        {children}
-      </SmallMessage>
+    <EmptyMessage icon={<IconWarning />}>
+      <SmallMessage>{children}</SmallMessage>
     </EmptyMessage>
   ) : (
     <EmptyStreamWrapper data-test-id="empty-state">

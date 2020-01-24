@@ -21,6 +21,7 @@ import InlineSvg from 'app/components/inlineSvg';
 import Link from 'app/components/links/link';
 import LoadingError from 'app/components/loadingError';
 import LoadingIndicator from 'app/components/loadingIndicator';
+import {IconUser} from 'app/icons/iconUser';
 import SentryTypes from 'app/sentryTypes';
 import overflowEllipsis from 'app/styles/overflowEllipsis';
 import space from 'app/styles/space';
@@ -307,7 +308,7 @@ class TeamMembers extends React.Component {
             );
           })
         ) : (
-          <EmptyMessage icon="icon-user" size="large">
+          <EmptyMessage icon={<IconUser />} size="large">
             {t('This team has no members')}
           </EmptyMessage>
         )}
