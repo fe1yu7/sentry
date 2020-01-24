@@ -7,7 +7,7 @@ import {t} from 'app/locale';
 import AlertLink from 'app/components/alertLink';
 import AsyncView from 'app/views/asyncView';
 import Form from 'app/views/settings/components/forms/form';
-import InlineSvg from 'app/components/inlineSvg';
+import {IconChevron} from 'app/icons/iconChevron';
 import JsonForm from 'app/views/settings/components/forms/jsonForm';
 import Link from 'app/components/links/link';
 import {PanelFooter} from 'app/components/panels';
@@ -97,7 +97,7 @@ class FineTuningFooter extends React.Component {
       <PanelFooter css={{borderTop: 'none'}}>
         <FineTuneLink to={`${baseUrl}${path}`}>
           <span>{text}</span>
-          <InlineSvg src="icon-chevron-right" size="15px" />
+          <IconChevron direction="right" />
         </FineTuneLink>
       </PanelFooter>
     );

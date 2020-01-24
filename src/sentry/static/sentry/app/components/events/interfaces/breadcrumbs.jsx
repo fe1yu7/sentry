@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import styled from '@emotion/styled';
+
 import EventDataSection from 'app/components/events/eventDataSection';
 import SentryTypes from 'app/sentryTypes';
 import GuideAnchor from 'app/components/assistant/guideAnchor';
@@ -158,7 +160,7 @@ class BreadcrumbsInterface extends React.Component {
           value={this.state.queryValue}
           onChange={this.setQuery}
         />
-        <IconSearch />
+        <StyledIconSearch size="xs" />
         {this.state.queryValue && (
           <div>
             <a className="search-clear-form" onClick={this.clearSearch}>
@@ -233,5 +235,11 @@ class BreadcrumbsInterface extends React.Component {
     );
   }
 }
+
+const StyledIconSearch = styled(IconSearch)`
+  position: absolute;
+  left: 8px;
+  top: 8px;
+`;
 
 export default BreadcrumbsInterface;

@@ -2,10 +2,16 @@ import {ClassNames} from '@emotion/core';
 import PropTypes from 'prop-types';
 import React from 'react';
 import styled from '@emotion/styled';
-import InlineSvg from 'app/components/inlineSvg';
 import space from 'app/styles/space';
 import capitalize from 'lodash/capitalize';
 import Hovercard from 'app/components/hovercard';
+import InlineSvg from 'app/components/inlineSvg';
+import {IconBitbucket} from 'app/icons/iconBitbucket';
+import {IconGitlab} from 'app/icons/iconGitlab';
+import {IconGithub} from 'app/icons/iconGithub';
+import {IconJira} from 'app/icons/iconJira';
+import {IconVsts} from 'app/icons/iconVsts';
+import {IconGeneric} from 'app/icons/iconGeneric';
 import {callIfFunction} from 'app/utils/callIfFunction';
 
 type Props = {
@@ -44,20 +50,20 @@ class IssueSyncListElement extends React.Component<Props> {
   getIcon(): React.ReactNode {
     switch (this.props.integrationType) {
       case 'bitbucket':
-        return <IntegrationIcon src="icon-bitbucket" />;
+        return <IconBitbucket />;
       case 'gitlab':
-        return <IntegrationIcon src="icon-gitlab" />;
+        return <IconGitlab />;
       case 'github':
-        return <IntegrationIcon src="icon-github" />;
+        return <IconGithub />;
       case 'github_enterprise':
-        return <IntegrationIcon src="icon-github" />;
+        return <IconGithub />;
       case 'jira':
       case 'jira_server':
-        return <IntegrationIcon src="icon-jira" />;
+        return <IconJira />;
       case 'vsts':
-        return <IntegrationIcon src="icon-vsts" />;
+        return <IconVsts />;
       default:
-        return <IntegrationIcon src="icon-generic-box" />;
+        return <IconGeneric />;
     }
   }
 
@@ -125,7 +131,7 @@ class IssueSyncListElement extends React.Component<Props> {
         </ClassNames>
         {this.props.onOpen && this.props.onClose && (
           <OpenCloseIcon
-            src="icon-close"
+            icon="icon-close"
             onClick={this.isLinked() ? this.handleDelete : this.props.onOpen}
             isLinked={this.isLinked()}
           />
@@ -144,14 +150,6 @@ export const IssueSyncListElementContainer = styled('div')`
   &:not(:last-child) {
     margin-bottom: ${space(2)};
   }
-`;
-
-export const IntegrationIcon = styled(InlineSvg)`
-  color: ${p => p.theme.gray4};
-  width: ${space(3)};
-  height: ${space(3)};
-  cursor: pointer;
-  flex-shrink: 0;
 `;
 
 export const IntegrationLink = styled('a')`

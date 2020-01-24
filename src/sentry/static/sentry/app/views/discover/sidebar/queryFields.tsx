@@ -15,10 +15,10 @@ import {
   PlaceholderText,
   SidebarLabel,
   DocsSeparator,
-  StyledInlineSvg,
   DiscoverDocs,
   DocsLabel,
   DocsIcon,
+  DocsChevron,
   DocsLink,
 } from '../styles';
 import Orderby from './orderby';
@@ -161,9 +161,9 @@ export default class QueryFields extends React.Component<QueryFieldsProps> {
         <DocsSeparator />
         <DocsLink href="https://docs.sentry.io/product/discover/">
           <DiscoverDocs>
-            <DocsIcon src="icon-docs" />
+            <DocsIcon size="lg" />
             <DocsLabel>{t('Discover Documentation')}</DocsLabel>
-            <StyledInlineSvg src="icon-chevron-right" size="1em" />
+            <DocsChevron size="md" direction="right" />
           </DiscoverDocs>
         </DocsLink>
       </div>

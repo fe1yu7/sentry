@@ -5,7 +5,8 @@ import uniq from 'lodash/uniq';
 import {trackAnalyticsEvent} from 'app/utils/analytics';
 import {t} from 'app/locale';
 import {Form, SelectField} from 'app/components/forms';
-import InlineSvg from 'app/components/inlineSvg';
+import {IconDocs} from 'app/icons/iconDocs';
+import {IconChevron} from 'app/icons/iconChevron';
 import {Organization} from 'app/types';
 import space from 'app/styles/space';
 
@@ -196,10 +197,10 @@ const TableModalEditColumnFooter = () => (
   <FooterContent>
     {/* Attach href to documentation on FooterContent */}
     <div>
-      <InlineSvg src="icon-docs" /> Documentation (Coming soon!)
+      <IconDocs /> Documentation (Coming soon!)
     </div>
     <div>
-      <InlineSvg src="icon-chevron-right" />
+      <IconChevron direction="right" />
     </div>
   </FooterContent>
 );
