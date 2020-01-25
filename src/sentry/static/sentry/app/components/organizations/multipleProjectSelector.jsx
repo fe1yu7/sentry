@@ -14,7 +14,7 @@ import ProjectSelector from 'app/components/projectSelector';
 import Tooltip from 'app/components/tooltip';
 
 import HeaderItem from 'app/components/organizations/headerItem';
-import {IconProject} from 'app/icons/iconProject';
+import {IconProject} from 'app/icons';
 import {growIn} from 'app/styles/animations';
 import space from 'app/styles/space';
 

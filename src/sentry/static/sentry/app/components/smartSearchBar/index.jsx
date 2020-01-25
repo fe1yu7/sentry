@@ -33,7 +33,7 @@ import DropdownLink from 'app/components/dropdownLink';
 import MemberListStore from 'app/stores/memberListStore';
 import SentryTypes from 'app/sentryTypes';
 import space from 'app/styles/space';
-import {IconSearch} from 'app/icons/iconSearch';
+import {IconSearch} from 'app/icons';
 import theme from 'app/utils/theme';
 import withApi from 'app/utils/withApi';
 import withOrganization from 'app/utils/withOrganization';
@@ -97,6 +97,25 @@ const getDropdownElementStyles = p => `
 `;
 
 class SmartSearchBar extends React.Component {
+  /**
+   * Returns an array of query terms, including incomplete terms
+   *
+   * e.g. ["is:unassigned", "browser:\"Chrome 33.0\"", "assigned"]
+   */
+  static getQueryTerms = (query, cursor) => {
+    return query.slice(0, cursor).match(/\S+:"[^"]*"?|\S+/g);
+  };
+
+  /**
+   * Given a query, and the current cursor position, return the string-delimiting
+   * index of the search term designated by the cursor.
+   */
+  static getLastTermIndex = (query, cursor) => {
+    // TODO: work with quoted-terms
+    const cursorOffset = query.slice(cursor).search(/\s|$/);
+    return cursor + (cursorOffset === -1 ? 0 : cursorOffset);
+  };
+
   static propTypes = {
     api: PropTypes.object,
 
@@ -184,25 +203,6 @@ class SmartSearchBar extends React.Component {
 
   static contextTypes = {
     router: PropTypes.object,
-  };
-
-  /**
-   * Given a query, and the current cursor position, return the string-delimiting
-   * index of the search term designated by the cursor.
-   */
-  static getLastTermIndex = (query, cursor) => {
-    // TODO: work with quoted-terms
-    const cursorOffset = query.slice(cursor).search(/\s|$/);
-    return cursor + (cursorOffset === -1 ? 0 : cursorOffset);
-  };
-
-  /**
-   * Returns an array of query terms, including incomplete terms
-   *
-   * e.g. ["is:unassigned", "browser:\"Chrome 33.0\"", "assigned"]
-   */
-  static getQueryTerms = (query, cursor) => {
-    return query.slice(0, cursor).match(/\S+:"[^"]*"?|\S+/g);
   };
 
   static defaultProps = {

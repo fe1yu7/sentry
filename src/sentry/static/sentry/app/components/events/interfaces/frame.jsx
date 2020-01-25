@@ -25,7 +25,7 @@ import withSentryAppComponents from 'app/utils/withSentryAppComponents';
 import {DebugMetaActions} from 'app/stores/debugMetaStore';
 import {SymbolicatorStatus} from 'app/components/events/interfaces/types';
 import InlineSvg from 'app/components/inlineSvg';
-import {IconRefresh} from 'app/icons/iconRefresh';
+import {IconRefresh} from 'app/icons';
 import {combineStatus} from 'app/components/events/interfaces/debugmeta';
 import {Assembly} from 'app/components/events/interfaces/assembly';
 import {parseAssembly} from 'app/components/events/interfaces/utils';

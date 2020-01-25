@@ -6,7 +6,7 @@ import EventDataSection from 'app/components/events/eventDataSection';
 import SentryTypes from 'app/sentryTypes';
 import GuideAnchor from 'app/components/assistant/guideAnchor';
 import Breadcrumb from 'app/components/events/interfaces/breadcrumbs/breadcrumb';
-import {IconSearch} from 'app/icons/iconSearch';
+import {IconSearch} from 'app/icons';
 import {t, tct} from 'app/locale';
 import {PlatformContext} from 'app/components/events/interfaces/breadcrumbs/platformContext';
 
@@ -51,8 +51,6 @@ class BreadcrumbsInterface extends React.Component {
     project: SentryTypes.Project,
   };
 
-  static MAX_CRUMBS_WHEN_COLLAPSED = 10;
-
   constructor(...args) {
     super(...args);
     this.state = {
@@ -60,6 +58,8 @@ class BreadcrumbsInterface extends React.Component {
       queryValue: '',
     };
   }
+
+  static MAX_CRUMBS_WHEN_COLLAPSED = 10;
 
   onCollapseToggle = () => {
     this.setState({

@@ -7,7 +7,7 @@ import {Panel, PanelBody, PanelHeader, PanelItem} from 'app/components/panels';
 import {addErrorMessage} from 'app/actionCreators/indicator';
 import {t} from 'app/locale';
 import AlertLink from 'app/components/alertLink';
-import {IconStack} from 'app/icons/iconStack';
+import {IconStack} from 'app/icons';
 import AsyncView from 'app/views/asyncView';
 import Button from 'app/components/button';
 import Form from 'app/views/settings/components/forms/form';

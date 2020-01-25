@@ -184,7 +184,7 @@ const OwnershipValue = styled('code')`
   line-height: 1.2;
 `;
 
-const EmailAlert = styled(p => <Alert iconSize="16px" {...p} />)`
+const EmailAlert = styled(p => <Alert {...p} />)`
   margin: 10px -13px -13px;
   border-radius: 0;
   border-color: #ece0b0;

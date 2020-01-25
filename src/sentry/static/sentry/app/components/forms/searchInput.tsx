@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {IconSearch} from 'app/icons/iconSearch';
+import {IconSearch} from 'app/icons';
 import InlineSvg from 'app/components/inlineSvg';
 import Input from 'app/components/forms/input';
 import space from 'app/styles/space';

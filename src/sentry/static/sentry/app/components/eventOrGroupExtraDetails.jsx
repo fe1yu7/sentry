@@ -6,7 +6,7 @@ import styled from '@emotion/styled';
 import {tct} from 'app/locale';
 import EventAnnotation from 'app/components/events/eventAnnotation';
 import ProjectBadge from 'app/components/idBadge/projectBadge';
-import {IconChat} from 'app/icons/iconChat';
+import {IconChat} from 'app/icons';
 import SentryTypes from 'app/sentryTypes';
 import ShortId from 'app/components/shortId';
 import Times from 'app/components/group/times';

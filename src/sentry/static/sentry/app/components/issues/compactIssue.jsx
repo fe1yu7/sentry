@@ -10,7 +10,7 @@ import {t} from 'app/locale';
 import DropdownLink from 'app/components/dropdownLink';
 import ErrorLevel from 'app/components/events/errorLevel';
 import GroupChart from 'app/components/stream/groupChart';
-import {IconChat} from 'app/icons/iconChat';
+import {IconChat} from 'app/icons';
 import GroupStore from 'app/stores/groupStore';
 import Link from 'app/components/links/link';
 import SentryTypes from 'app/sentryTypes';

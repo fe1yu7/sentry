@@ -11,7 +11,7 @@ const ReleaseAllEvents = ({release, params}) => {
   const {orgId} = params;
   return (
     <div>
-      <Alert icon="icon-open" iconSize="14px" type="warning">
+      <Alert icon="icon-open" type="warning">
         <Link
           to={{
             pathname: `/organizations/${orgId}/issues/`,

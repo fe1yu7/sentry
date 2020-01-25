@@ -3,7 +3,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 import HeroIcon from 'app/components/heroIcon';
-import {IconWarning} from 'app/icons/iconWarning';
+import {IconWarning} from 'app/icons';
 import EmptyMessage from 'app/views/settings/components/emptyMessage';
 
 type Props = {

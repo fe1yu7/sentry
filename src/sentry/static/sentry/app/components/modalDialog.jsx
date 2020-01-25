@@ -186,10 +186,9 @@ const CircleButton = styled('button')`
 `;
 
 const DismissButton = props => {
-  const iconSize = props.size * 0.4;
   return (
     <CircleButton size={props.size} onClick={props.onClick}>
-      <InlineSvg src="icon-close" size={`${iconSize}px`} />
+      <InlineSvg src="icon-close" />
     </CircleButton>
   );
 };

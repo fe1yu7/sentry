@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import styled from '@emotion/styled';
 
-import {IconSearch} from 'app/icons/iconSearch';
+import {IconSearch} from 'app/icons';
 
 type Props = {
   query: string;

@@ -16,7 +16,7 @@ import AlertLink from 'app/components/alertLink';
 import AsyncComponent from 'app/components/asyncComponent';
 import ErrorBoundary from 'app/components/errorBoundary';
 import ExternalIssueActions from 'app/components/group/externalIssueActions';
-import {IconGeneric} from 'app/icons/iconGeneric';
+import {IconGeneric} from 'app/icons';
 import ExternalIssueStore from 'app/stores/externalIssueStore';
 import IssueSyncListElement from 'app/components/issueSyncListElement';
 import PluginActions from 'app/components/group/pluginActions';

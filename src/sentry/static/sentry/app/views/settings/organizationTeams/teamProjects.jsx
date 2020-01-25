@@ -16,7 +16,7 @@ import ProjectListItem from 'app/views/settings/components/settingsProjectItem';
 import {Panel, PanelHeader, PanelBody, PanelItem} from 'app/components/panels';
 import InlineSvg from 'app/components/inlineSvg';
 import Pagination from 'app/components/pagination';
-import {IconWarning} from 'app/icons/iconWarning';
+import {IconWarning} from 'app/icons';
 import {sortProjects} from 'app/utils';
 import {t} from 'app/locale';
 import withOrganization from 'app/utils/withOrganization';

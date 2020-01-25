@@ -21,7 +21,7 @@ import HeaderItem from 'app/components/organizations/headerItem';
 import HookOrDefault from 'app/components/hookOrDefault';
 import MultipleSelectorSubmitRow from 'app/components/organizations/multipleSelectorSubmitRow';
 import SelectorItems from 'app/components/organizations/timeRangeSelector/dateRange/selectorItems';
-import {IconCalendar} from 'app/icons/iconCalendar';
+import {IconCalendar} from 'app/icons';
 import SentryTypes from 'app/sentryTypes';
 import space from 'app/styles/space';
 import getDynamicText from 'app/utils/getDynamicText';
@@ -113,13 +113,13 @@ class TimeRangeSelector extends React.PureComponent {
     organization: SentryTypes.Organization,
   };
 
+  static contextTypes = {
+    router: PropTypes.object,
+  };
+
   static defaultProps = {
     showAbsolute: true,
     showRelative: true,
-  };
-
-  static contextTypes = {
-    router: PropTypes.object,
   };
 
   constructor(props) {

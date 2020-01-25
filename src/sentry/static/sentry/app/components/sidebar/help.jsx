@@ -8,7 +8,7 @@ import {t} from 'app/locale';
 import DropdownMenu from 'app/components/dropdownMenu';
 import SidebarItem from 'app/components/sidebar/sidebarItem';
 import Hook from 'app/components/hook';
-import {IconQuestion} from 'app/icons/iconQuestion';
+import {IconQuestion} from 'app/icons';
 
 import SidebarMenuItem from './sidebarMenuItem';
 import SidebarDropdownMenu from './sidebarDropdownMenu.styled';

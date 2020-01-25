@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import AvatarList from 'app/components/avatar/avatarList';
-import {IconFile} from 'app/icons/iconFile';
+import {IconFile} from 'app/icons';
 
 class FileChange extends React.PureComponent {
   static propTypes = {

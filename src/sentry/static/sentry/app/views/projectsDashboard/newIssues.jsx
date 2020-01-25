@@ -3,7 +3,7 @@ import React from 'react';
 
 import {Panel, PanelBody, PanelItem} from 'app/components/panels';
 import IssueList from 'app/components/issueList';
-import {IconRefresh} from 'app/icons/iconRefresh';
+import {IconRefresh} from 'app/icons';
 import {t} from 'app/locale';
 
 export default class NewIssues extends React.Component {

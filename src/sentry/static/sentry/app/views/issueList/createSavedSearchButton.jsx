@@ -103,7 +103,6 @@ class CreateSavedSearchButton extends React.Component {
           type="button"
           aria-label={t('Add to organization filter list')}
           icon="icon-add-to-list"
-          iconSize="16px"
           className={buttonClassName}
         >
           {!iconOnly && t('Create Saved Search')}

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {IconChevron} from 'app/icons/iconChevron';
+import {IconChevron} from 'app/icons';
 import parseLinkHeader from 'app/utils/parseLinkHeader';
 import {callIfFunction} from 'app/utils/callIfFunction';
 import {Query} from 'history';

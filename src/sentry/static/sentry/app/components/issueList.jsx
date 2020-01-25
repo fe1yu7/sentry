@@ -7,7 +7,7 @@ import {Panel, PanelBody} from 'app/components/panels';
 import withApi from 'app/utils/withApi';
 import CompactIssue from 'app/components/issues/compactIssue';
 import EmptyMessage from 'app/views/settings/components/emptyMessage';
-import {IconWarning} from 'app/icons/iconWarning';
+import {IconWarning} from 'app/icons';
 import LoadingError from 'app/components/loadingError';
 import LoadingIndicator from 'app/components/loadingIndicator';
 import Pagination from 'app/components/pagination';

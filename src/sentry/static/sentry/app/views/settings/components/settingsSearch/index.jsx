@@ -3,7 +3,7 @@ import keydown from 'react-keydown';
 import styled from '@emotion/styled';
 
 import {t} from 'app/locale';
-import {IconSearch} from 'app/icons/iconSearch';
+import {IconSearch} from 'app/icons';
 import Search from 'app/components/search';
 
 const MIN_SEARCH_LENGTH = 1;

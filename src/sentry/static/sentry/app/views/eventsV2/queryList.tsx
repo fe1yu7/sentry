@@ -10,7 +10,7 @@ import space from 'app/styles/space';
 import {Organization, SavedQuery} from 'app/types';
 import {trackAnalyticsEvent} from 'app/utils/analytics';
 import {Client} from 'app/api';
-import {IconEllipsis} from 'app/icons/iconEllipsis';
+import {IconEllipsis} from 'app/icons';
 import DropdownMenu from 'app/components/dropdownMenu';
 import MenuItem from 'app/components/menuItem';
 import Pagination from 'app/components/pagination';

@@ -10,7 +10,7 @@ import ActivityAuthor from 'app/components/activity/author';
 import ActivityItem from 'app/components/activity/item';
 import Clipboard from 'app/components/clipboard';
 import Link from 'app/components/links/link';
-import {IconCopy} from 'app/icons/iconCopy';
+import {IconCopy} from 'app/icons';
 import space from 'app/styles/space';
 
 type Props = {

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 import {t} from 'app/locale';
-import {IconReturn} from 'app/icons/iconReturn';
+import {IconReturn} from 'app/icons';
 import Tooltip from 'app/components/tooltip';
 
 const SubmitButton = styled('div')`

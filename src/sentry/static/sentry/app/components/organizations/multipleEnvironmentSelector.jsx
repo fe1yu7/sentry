@@ -12,7 +12,7 @@ import DropdownAutoComplete from 'app/components/dropdownAutoComplete';
 import GlobalSelectionHeaderRow from 'app/components/globalSelectionHeaderRow';
 import HeaderItem from 'app/components/organizations/headerItem';
 import Highlight from 'app/components/highlight';
-import {IconWindow} from 'app/icons/iconWindow';
+import {IconWindow} from 'app/icons';
 import MultipleSelectorSubmitRow from 'app/components/organizations/multipleSelectorSubmitRow';
 import SentryTypes from 'app/sentryTypes';
 import theme from 'app/utils/theme';

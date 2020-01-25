@@ -3,7 +3,7 @@ import React from 'react';
 import {LocationDescriptor} from 'history';
 
 import Link from 'app/components/links/link';
-import {IconChevron} from 'app/icons/iconChevron';
+import {IconChevron} from 'app/icons';
 import space from 'app/styles/space';
 
 type Size = 'small' | 'normal';
@@ -67,7 +67,7 @@ const StyledLink = styled(Link)<{priority: Priority; size: Size}>`
 
 const IconWrapper = styled('div')`
   display: flex;
-  margin-right: ${space(0.5)};
+  margin-right: ${space(1)};
 `;
 
 const AlertLinkText = styled('div')`

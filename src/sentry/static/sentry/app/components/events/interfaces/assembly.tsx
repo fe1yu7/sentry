@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 
-import {IconReturn} from 'app/icons/iconReturn';
+import {IconReturn} from 'app/icons';
 import TextCopyInput from 'app/views/settings/components/forms/textCopyInput';
 import {t} from 'app/locale';
 import space from 'app/styles/space';

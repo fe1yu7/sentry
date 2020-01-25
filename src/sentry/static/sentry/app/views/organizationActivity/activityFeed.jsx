@@ -8,7 +8,7 @@ import ErrorBoundary from 'app/components/errorBoundary';
 import LoadingError from 'app/components/loadingError';
 import LoadingIndicator from 'app/components/loadingIndicator';
 import Pagination from 'app/components/pagination';
-import {IconWarning} from 'app/icons/iconWarning';
+import {IconWarning} from 'app/icons';
 import SentryTypes from 'app/sentryTypes';
 import space from 'app/styles/space';
 import withApi from 'app/utils/withApi';

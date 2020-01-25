@@ -8,7 +8,7 @@ import withApi from 'app/utils/withApi';
 import DropdownLink from 'app/components/dropdownLink';
 import MenuItem from 'app/components/menuItem';
 import Pagination from 'app/components/pagination';
-import {IconSearch} from 'app/icons/iconSearch';
+import {IconSearch} from 'app/icons';
 
 class Filter extends React.Component {
   static propTypes = {
@@ -172,7 +172,7 @@ const ResultGrid = createReactClass({
       keyForRow: function(row) {
         return row.id;
       },
-      columnsForRow: function(row) {
+      columnsForRow: function() {
         return [];
       },
       defaultParams: {

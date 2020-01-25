@@ -22,7 +22,7 @@ import TextBlock from 'app/views/settings/components/text/textBlock';
 import routeTitleGen from 'app/utils/routeTitle';
 import withOrganization from 'app/utils/withOrganization';
 import withProject from 'app/utils/withProject';
-import {IconWarning} from 'app/icons/iconWarning';
+import {IconWarning} from 'app/icons';
 
 import KeyRow from './keyRow';
 

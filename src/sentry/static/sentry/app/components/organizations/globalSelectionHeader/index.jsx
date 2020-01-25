@@ -24,7 +24,7 @@ import BackToIssues from 'app/components/organizations/backToIssues';
 import ConfigStore from 'app/stores/configStore';
 import HeaderItemPosition from 'app/components/organizations/headerItemPosition';
 import HeaderSeparator from 'app/components/organizations/headerSeparator';
-import {IconArrow} from 'app/icons/iconArrow';
+import {IconArrow} from 'app/icons';
 import MultipleEnvironmentSelector from 'app/components/organizations/multipleEnvironmentSelector';
 import MultipleProjectSelector from 'app/components/organizations/multipleProjectSelector';
 import Projects from 'app/utils/projects';

@@ -15,7 +15,7 @@ import overflowEllipsis from 'app/styles/overflowEllipsis';
 import Pagination from 'app/components/pagination';
 import RepositoryRow from 'app/components/repositoryRow';
 import {Panel, PanelBody, PanelHeader} from 'app/components/panels';
-import {IconCommit} from 'app/icons/iconCommit';
+import {IconCommit} from 'app/icons';
 import space from 'app/styles/space';
 import {t} from 'app/locale';
 import {Integration, Repository} from 'app/types';

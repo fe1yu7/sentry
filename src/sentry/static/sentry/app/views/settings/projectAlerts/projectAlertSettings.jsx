@@ -7,7 +7,7 @@ import routeTitleGen from 'app/utils/routeTitle';
 import withOrganization from 'app/utils/withOrganization';
 import Access from 'app/components/acl/access';
 import AlertLink from 'app/components/alertLink';
-import {IconMail} from 'app/icons/iconMail';
+import {IconMail} from 'app/icons';
 import AsyncView from 'app/views/asyncView';
 import Form from 'app/views/settings/components/forms/form';
 import JsonForm from 'app/views/settings/components/forms/jsonForm';
