@@ -14,9 +14,7 @@ import Button from 'app/components/button';
 import Clipboard from 'app/components/clipboard';
 import Confirm from 'app/components/confirm';
 import EmptyMessage from 'app/views/settings/components/emptyMessage';
-import {IconCopy} from 'app/icons/iconCopy';
-import {IconPrint} from 'app/icons/iconPrint';
-import {IconDownload} from 'app/icons/iconDownload';
+import {IconCopy, IconDownload, IconPrint} from 'app/icons';
 import space from 'app/styles/space';
 
 class RecoveryCodes extends React.Component {

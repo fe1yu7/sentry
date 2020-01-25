@@ -10,8 +10,7 @@ import Link from 'app/components/links/link';
 import NavTabs from 'app/components/navTabs';
 import space from 'app/styles/space';
 import theme from 'app/utils/theme';
-import {IconDocs} from 'app/icons/iconDocs';
-import {IconChevron} from 'app/icons/iconChevron';
+import {IconChevron, IconDocs} from 'app/icons';
 import ExternalLink from 'app/components/links/externalLink';
 
 const HEADER_HEIGHT = 60;

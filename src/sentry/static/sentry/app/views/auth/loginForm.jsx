@@ -6,9 +6,7 @@ import styled from '@emotion/styled';
 
 import {formFooterClass} from 'app/views/auth/login';
 import {t} from 'app/locale';
-import {IconGoogle} from 'app/icons/iconGoogle';
-import {IconGithub} from 'app/icons/iconGithub';
-import {IconVsts} from 'app/icons/iconVsts';
+import {IconGithub, IconGoogle, IconVsts} from 'app/icons';
 import Button from 'app/components/button';
 import ConfigStore from 'app/stores/configStore';
 import Form from 'app/components/forms/form';

@@ -5,12 +5,14 @@ import styled from '@emotion/styled';
 import space from 'app/styles/space';
 import capitalize from 'lodash/capitalize';
 import Hovercard from 'app/components/hovercard';
-import {IconBitbucket} from 'app/icons/iconBitbucket';
-import {IconGitlab} from 'app/icons/iconGitlab';
-import {IconGithub} from 'app/icons/iconGithub';
-import {IconJira} from 'app/icons/iconJira';
-import {IconVsts} from 'app/icons/iconVsts';
-import {IconGeneric} from 'app/icons/iconGeneric';
+import {
+  IconBitbucket,
+  IconGeneric,
+  IconGithub,
+  IconGitlab,
+  IconJira,
+  IconVsts,
+} from 'app/icons';
 import InlineSvg from 'app/components/inlineSvg';
 import {callIfFunction} from 'app/utils/callIfFunction';
 

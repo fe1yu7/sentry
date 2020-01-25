@@ -4,8 +4,7 @@ import isPropValid from '@emotion/is-prop-valid';
 
 import {t} from 'app/locale';
 import Link from 'app/components/links/link';
-import {IconPrevious} from 'app/icons/iconPrevious';
-import {IconNext} from 'app/icons/iconNext';
+import {IconNext, IconPrevious} from 'app/icons';
 import space from 'app/styles/space';
 import {Event, Organization} from 'app/types';
 

@@ -5,9 +5,7 @@ import styled from '@emotion/styled';
 
 import IdBadge from 'app/components/idBadge';
 import PluginIcon from 'app/plugins/components/pluginIcon';
-import {IconSettings} from 'app/icons/iconSettings';
-import {IconInput} from 'app/icons/iconInput';
-import {IconLink} from 'app/icons/iconLink';
+import {IconInput, IconLink, IconSettings} from 'app/icons';
 import SentryTypes from 'app/sentryTypes';
 import highlightFuseMatches from 'app/utils/highlightFuseMatches';
 

@@ -14,8 +14,7 @@ import FlowLayout from 'app/components/flowLayout';
 import LoadingIndicator from 'app/components/loadingIndicator';
 import SpreadLayout from 'app/components/spreadLayout';
 import Switch from 'app/components/switch';
-import {IconCopy} from 'app/icons/iconCopy';
-import {IconRefresh} from 'app/icons/iconRefresh';
+import {IconCopy, IconRefresh} from 'app/icons';
 
 const BORDER_COLOR = '#dad5df';
 
@@ -187,7 +186,7 @@ class ShareIssue extends React.Component {
   };
 
   // State of confirm modal so we can keep dropdown menu opn
-  handleConfirmCancel = e => (this.hasConfirmModal = false);
+  handleConfirmCancel = () => (this.hasConfirmModal = false);
   handleConfirmReshare = () => (this.hasConfirmModal = true);
 
   render() {

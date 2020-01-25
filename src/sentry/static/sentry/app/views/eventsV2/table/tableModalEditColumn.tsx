@@ -5,8 +5,7 @@ import uniq from 'lodash/uniq';
 import {trackAnalyticsEvent} from 'app/utils/analytics';
 import {t} from 'app/locale';
 import {Form, SelectField} from 'app/components/forms';
-import {IconDocs} from 'app/icons/iconDocs';
-import {IconChevron} from 'app/icons/iconChevron';
+import {IconChevron, IconDocs} from 'app/icons';
 import {Organization} from 'app/types';
 import space from 'app/styles/space';
 

@@ -6,10 +6,7 @@ import {t} from 'app/locale';
 import {getShortCommitHash} from 'app/utils';
 import Button from 'app/components/button';
 import ExternalLink from 'app/components/links/externalLink';
-import {IconGithub} from 'app/icons/iconGithub';
-import {IconBitbucket} from 'app/icons/iconBitbucket';
-import {IconVsts} from 'app/icons/iconVsts';
-import {IconGitlab} from 'app/icons/iconGitlab';
+import {IconBitbucket, IconGithub, IconGitlab, IconVsts} from 'app/icons';
 
 type CommitFormatterParameters = {
   baseUrl: string;

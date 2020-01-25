@@ -16,18 +16,20 @@ import ConfigStore from 'app/stores/configStore';
 import Feature from 'app/components/acl/feature';
 import HookStore from 'app/stores/hookStore';
 import InlineSvg from 'app/components/inlineSvg';
-import {IconActivity} from 'app/icons/iconActivity';
-import {IconDashboard} from 'app/icons/iconDashboard';
-import {IconIssues} from 'app/icons/iconIssues';
-import {IconStack} from 'app/icons/iconStack';
-import {IconTelescope} from 'app/icons/iconTelescope';
-import {IconSiren} from 'app/icons/iconSiren';
-import {IconReleases} from 'app/icons/iconReleases';
-import {IconSupport} from 'app/icons/iconSupport';
-import {IconGraph} from 'app/icons/iconGraph';
-import {IconLab} from 'app/icons/iconLab';
-import {IconStats} from 'app/icons/iconStats';
-import {IconSettings} from 'app/icons/iconSettings';
+import {
+  IconActivity,
+  IconDashboard,
+  IconGraph,
+  IconIssues,
+  IconLab,
+  IconReleases,
+  IconSettings,
+  IconSiren,
+  IconStack,
+  IconStats,
+  IconSupport,
+  IconTelescope,
+} from 'app/icons';
 import PreferencesStore from 'app/stores/preferencesStore';
 import SentryTypes from 'app/sentryTypes';
 import space from 'app/styles/space';
