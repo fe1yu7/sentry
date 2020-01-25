@@ -39,7 +39,7 @@ const Action = styled('div')`
 type Props = {
   title?: React.ReactNode;
   description?: React.ReactNode;
-  icon?: object;
+  icon?: string | object;
   action?: React.ReactElement;
   size?: 'large' | 'medium';
 };
