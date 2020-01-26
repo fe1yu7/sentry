@@ -15,7 +15,7 @@ import overflowEllipsis from 'app/styles/overflowEllipsis';
 import Pagination from 'app/components/pagination';
 import RepositoryRow from 'app/components/repositoryRow';
 import {Panel, PanelBody, PanelHeader} from 'app/components/panels';
-import {IconCommit} from 'app/icons';
+import {IconCommit, IconWarning} from 'app/icons';
 import space from 'app/styles/space';
 import {t} from 'app/locale';
 import {Integration, Repository} from 'app/types';
@@ -196,7 +196,7 @@ export default class IntegrationRepos extends AsyncComponent<Props, State> {
     );
     if (badRequest) {
       return (
-        <Alert type="error" icon="icon-circle-exclamation">
+        <Alert type="error" icon={<IconWarning />}>
           {t(
             'We were unable to fetch repositories for this integration. Try again later, or reconnect this integration.'
           )}

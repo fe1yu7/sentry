@@ -12,7 +12,7 @@ import space from 'app/styles/space';
 // exporting it down with alertStyles caused error  'Props' is not defined  no-undef
 export type Props = {
   type?: 'muted' | 'info' | 'warning' | 'success' | 'error' | 'beta';
-  icon?: string | boolean;
+  icon?: object;
   alignTop?: boolean;
   system?: boolean;
 };
@@ -91,6 +91,7 @@ const StyledTextBlock = styled(TextBlock)`
 
 const IconWrapper = styled('div')`
   display: flex;
+  margin-right: ${space(1)};
 `;
 
 const Alert = styled(
@@ -106,7 +107,7 @@ const Alert = styled(
 
 Alert.propTypes = {
   type: PropTypes.oneOf(['muted', 'info', 'warning', 'success', 'error', 'beta']),
-  icon: PropTypes.string,
+  icon: PropTypes.object,
   alignTop: PropTypes.bool,
   system: PropTypes.bool,
 };

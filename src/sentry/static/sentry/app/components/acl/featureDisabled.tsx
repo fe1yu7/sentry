@@ -8,6 +8,7 @@ import Button from 'app/components/button';
 import ExternalLink from 'app/components/links/externalLink';
 import space from 'app/styles/space';
 import {CONFIG_DOCS_URL} from 'app/constants';
+import {IconLock} from 'app/icons';
 
 const installText = (features: string[], featureName: string): string =>
   `# ${t('Enables the %s feature', featureName)}\n${features
@@ -121,7 +122,7 @@ class FeatureDisabled extends React.Component<Props, State> {
     const AlertComponent = typeof alert === 'boolean' ? Alert : alert;
 
     return (
-      <AlertComponent type="warning" icon="icon-lock">
+      <AlertComponent type="warning" icon={<IconLock />}>
         <AlertWrapper>{this.renderFeatureDisabled()}</AlertWrapper>
       </AlertComponent>
     );
