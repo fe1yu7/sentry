@@ -14,7 +14,7 @@ import InlineSvg from 'app/components/inlineSvg';
 import Link from 'app/components/links/link';
 import LoadingIndicator from 'app/components/loadingIndicator';
 import {Panel, PanelBody, PanelHeader} from 'app/components/panels';
-import {IconSupport} from 'app/icons';
+import {IconDocs, IconStack, IconSupport} from 'app/icons';
 import overflowEllipsis from 'app/styles/overflowEllipsis';
 import SentryTypes from 'app/sentryTypes';
 import SettingsLayout from 'app/views/settings/components/settingsLayout';
@@ -131,7 +131,7 @@ class SettingsIndex extends React.Component<Props> {
                     </AvatarContainer>
                   ) : (
                     <HomeIcon color="green">
-                      <InlineSvg src="icon-stack" size="44px" />
+                      <IconStack size="xl" />
                     </HomeIcon>
                   )}
                   <OrganizationName>
@@ -165,7 +165,7 @@ class SettingsIndex extends React.Component<Props> {
               <HomePanelHeader>
                 <ExternalHomeLink isCentered href={LINKS.DOCUMENTATION}>
                   <HomeIcon color="orange">
-                    <InlineSvg src="icon-docs" size="48px" />
+                    <IconDocs size="xl" />
                   </HomeIcon>
                 </ExternalHomeLink>
                 <ExternalHomeLink href={LINKS.DOCUMENTATION}>

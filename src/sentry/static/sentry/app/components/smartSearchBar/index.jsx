@@ -1051,7 +1051,7 @@ class SmartSearchBar extends React.Component {
                   type="button"
                   aria-label={t('Show more')}
                 >
-                  <EllipsisIcon src="icon-ellipsis-filled" />
+                  <EllipsisIcon src="icon-ellipsis" />
                 </EllipsisButton>
               }
             >

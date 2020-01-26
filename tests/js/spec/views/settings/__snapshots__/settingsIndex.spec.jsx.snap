@@ -186,9 +186,8 @@ exports[`SettingsIndex renders 1`] = `
             <HomeIcon
               color="orange"
             >
-              <InlineSvg
-                size="48px"
-                src="icon-docs"
+              <IconDocs
+                size="xl"
               />
             </HomeIcon>
           </ExternalHomeLink>
