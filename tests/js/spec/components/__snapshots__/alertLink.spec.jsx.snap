@@ -11,7 +11,6 @@ exports[`AlertLink renders 1`] = `
   </AlertLinkText>
   <IconChevron
     direction="right"
-    size="md"
   />
 </StyledLink>
 `;
@@ -30,7 +29,6 @@ exports[`AlertLink renders with icon 1`] = `
   </AlertLinkText>
   <IconChevron
     direction="right"
-    size="md"
   />
 </StyledLink>
 `;
