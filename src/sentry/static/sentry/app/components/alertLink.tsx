@@ -38,7 +38,7 @@ export default class AlertLink extends React.Component<Props> {
       >
         {icon && <IconWrapper>{icon}</IconWrapper>}
         <AlertLinkText>{children}</AlertLinkText>
-        <IconChevron size="md" direction="right" />
+        <IconChevron direction="right" />
       </StyledLink>
     );
   }

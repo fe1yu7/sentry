@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-import InlineSvg from 'app/components/inlineSvg';
+import {IconClose} from 'app/icons';
 import space from 'app/styles/space';
 import {callIfFunction} from 'app/utils/callIfFunction';
 
@@ -188,7 +188,7 @@ const CircleButton = styled('button')`
 const DismissButton = props => {
   return (
     <CircleButton size={props.size} onClick={props.onClick}>
-      <InlineSvg src="icon-close" />
+      <IconClose />
     </CircleButton>
   );
 };

@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import styled from '@emotion/styled';
 
-import HeroIcon from 'app/components/heroIcon';
 import {IconWarning} from 'app/icons';
 import EmptyMessage from 'app/views/settings/components/emptyMessage';
 
@@ -17,7 +16,7 @@ const EmptyStateWarning: React.FC<Props> = ({small, children}) =>
     </EmptyMessage>
   ) : (
     <EmptyStreamWrapper data-test-id="empty-state">
-      <HeroIcon src="icon-circle-exclamation" size="54" />
+      <IconWarning size="xl" />
       {children}
     </EmptyStreamWrapper>
   );
@@ -41,10 +40,6 @@ const EmptyStreamWrapper = styled('div')`
     &:last-child {
       margin-bottom: 0;
     }
-  }
-
-  ${HeroIcon} {
-    margin-bottom: 20px;
   }
 `;
 

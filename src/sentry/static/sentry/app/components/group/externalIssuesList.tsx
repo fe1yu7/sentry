@@ -210,7 +210,7 @@ class ExternalIssueList extends AsyncComponent<Props, State> {
             <span>Linked Issues</span>
           </h6>
           <AlertLink
-            icon={<IconGeneric />}
+            icon={<IconGeneric size="md" />}
             priority="muted"
             size="small"
             to={`/settings/${this.props.organization.slug}/integrations`}
