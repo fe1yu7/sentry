@@ -122,7 +122,7 @@ class ActivityFeed extends React.Component {
 
   renderEmpty() {
     return (
-      <EmptyMessage icon={<IconWarning />}>
+      <EmptyMessage icon={<IconWarning size="xl" />}>
         {t('Nothing to show here, move along.')}
       </EmptyMessage>
     );
