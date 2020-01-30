@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import {css} from '@emotion/core';
 
 import PropTypes from 'prop-types';
-import InlineSvg from 'app/components/inlineSvg';
+import {IconCheckmark} from 'app/icons';
 
 const getDisabledStyles = p =>
   p.disabled &&
@@ -20,7 +20,7 @@ const getHoverStyles = p =>
 
 const CheckboxFancy = styled(({checked, disabled, ...props}) => (
   <div role="checkbox" aria-disabled={disabled} aria-checked={checked} {...props}>
-    {checked && <Check src="icon-checkmark-sm" />}
+    {checked && <IconCheckmark color="white" />}
   </div>
 ))`
   width: ${p => p.size};
@@ -52,11 +52,5 @@ CheckboxFancy.propTypes = {
   disabled: PropTypes.bool,
   size: PropTypes.string,
 };
-
-const Check = styled(InlineSvg)`
-  width: 70%;
-  height: 70%;
-  color: #fff;
-`;
 
 export default CheckboxFancy;

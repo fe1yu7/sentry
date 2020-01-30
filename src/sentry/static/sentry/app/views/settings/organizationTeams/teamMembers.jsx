@@ -17,11 +17,10 @@ import DropdownAutoComplete from 'app/components/dropdownAutoComplete';
 import DropdownButton from 'app/components/dropdownButton';
 import EmptyMessage from 'app/views/settings/components/emptyMessage';
 import IdBadge from 'app/components/idBadge';
-import InlineSvg from 'app/components/inlineSvg';
 import Link from 'app/components/links/link';
 import LoadingError from 'app/components/loadingError';
 import LoadingIndicator from 'app/components/loadingIndicator';
-import {IconUser} from 'app/icons';
+import {IconSubtract, IconUser} from 'app/icons';
 import SentryTypes from 'app/sentryTypes';
 import overflowEllipsis from 'app/styles/overflowEllipsis';
 import space from 'app/styles/space';
@@ -269,11 +268,7 @@ class TeamMembers extends React.Component {
         onClick={this.removeMember.bind(this, member)}
         label={t('Remove')}
       >
-        <InlineSvg
-          src="icon-circle-subtract"
-          size="1.25em"
-          style={{marginRight: space(1)}}
-        />
+        <StyledIconSubtract circle />
         {t('Remove')}
       </Button>
     );
@@ -355,6 +350,10 @@ const StyledMembersLabel = styled('div')`
 const StyledCreateMemberLink = styled(Link)`
   float: right;
   text-transform: none;
+`;
+
+const StyledIconSubtract = styled(IconSubtract)`
+  margin-left: ${space(1)};
 `;
 
 export default withConfig(withApi(withOrganization(TeamMembers)));

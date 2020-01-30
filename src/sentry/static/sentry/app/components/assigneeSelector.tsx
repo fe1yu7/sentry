@@ -304,7 +304,7 @@ const AssigneeSelectorComponent = createReactClass<Props, State>({
                   ) : (
                     <StyledIconUser size="md" />
                   )}
-                  <StyledIconChevron direction="down" />
+                  <StyledIconChevron direction="down" size="xs" />
                 </DropdownButton>
               );
             }}

@@ -14,9 +14,8 @@ import LoadingIndicator from 'app/components/loadingIndicator';
 import LoadingError from 'app/components/loadingError';
 import ProjectListItem from 'app/views/settings/components/settingsProjectItem';
 import {Panel, PanelHeader, PanelBody, PanelItem} from 'app/components/panels';
-import InlineSvg from 'app/components/inlineSvg';
 import Pagination from 'app/components/pagination';
-import {IconWarning} from 'app/icons';
+import {IconSubtract, IconWarning} from 'app/icons';
 import {sortProjects} from 'app/utils';
 import {t} from 'app/locale';
 import withOrganization from 'app/utils/withOrganization';
@@ -153,7 +152,7 @@ class TeamProjects extends React.Component {
                 this.handleLinkProject(project, 'remove');
               }}
             >
-              <RemoveIcon /> {t('Remove')}
+              <StyledIconRemove size="xs" circle /> {t('Remove')}
             </Button>
           </Tooltip>
         </StyledPanelItem>
@@ -224,13 +223,7 @@ class TeamProjects extends React.Component {
   }
 }
 
-const RemoveIcon = styled(props => (
-  <InlineSvg {...props} src="icon-circle-subtract">
-    {t('Remove')}
-  </InlineSvg>
-))`
-  min-height: 1.25em;
-  min-width: 1.25em;
+const StyledIconRemove = styled(IconSubtract)`
   margin-right: ${space(1)};
 `;
 

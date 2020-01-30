@@ -8,7 +8,7 @@ import Button from 'app/components/button';
 import ExternalLink from 'app/components/links/externalLink';
 import space from 'app/styles/space';
 import {CONFIG_DOCS_URL} from 'app/constants';
-import {IconLock} from 'app/icons';
+import {IconChevron, IconInfo, IconLock} from 'app/icons';
 
 const installText = (features: string[], featureName: string): string =>
   `# ${t('Enables the %s feature', featureName)}\n${features
@@ -79,14 +79,14 @@ class FeatureDisabled extends React.Component<Props, State> {
         <FeatureDisabledMessage>
           {message}
           {!hideHelpToggle && (
-            <HelpButton
-              icon={showHelp ? 'icon-chevron-down' : 'icon-circle-info'}
-              priority="link"
-              size="xsmall"
-              onClick={this.toggleHelp}
-            >
+            <Button priority="link" size="xsmall" onClick={this.toggleHelp}>
+              {showHelp ? (
+                <IconChevron direction="down" size="xs" />
+              ) : (
+                <IconInfo size="xs" />
+              )}
               {t('Help')}
-            </HelpButton>
+            </Button>
           )}
         </FeatureDisabledMessage>
         {showDescription && (
@@ -134,10 +134,6 @@ const FeatureDisabledMessage = styled('div')`
   justify-content: space-between;
 `;
 
-const HelpButton = styled(Button)`
-  font-size: 0.8em;
-`;
-
 const HelpDescription = styled('div')`
   font-size: 0.9em;
   margin-top: ${space(1)};
@@ -154,11 +150,10 @@ const HelpDescription = styled('div')`
 `;
 
 const AlertWrapper = styled('div')`
-  ${HelpButton} {
-    color: #6d6319;
-    &:hover {
-      color: #88750b;
-    }
+  color: #6d6319;
+
+  &:hover {
+    color: #88750b;
   }
 
   pre,

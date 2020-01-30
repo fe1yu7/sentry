@@ -640,33 +640,33 @@ exports[`OrganizationTeamProjects Should render 1`] = `
                                   <span
                                     className="css-19gcr2f-ButtonLabel edwq9my1"
                                   >
-                                    <RemoveIcon>
-                                      <Component
-                                        className="css-1d2szfl-RemoveIcon eqsa6vb0"
+                                    <StyledIconRemove
+                                      circle={true}
+                                      size="xs"
+                                    >
+                                      <IconSubtract
+                                        circle={true}
+                                        className="css-3hmlb1-StyledIconRemove eqsa6vb0"
+                                        size="xs"
                                       >
-                                        <InlineSvg
-                                          className="css-1d2szfl-RemoveIcon eqsa6vb0"
-                                          src="icon-circle-subtract"
+                                        <svg
+                                          className="css-3hmlb1-StyledIconRemove eqsa6vb0"
+                                          fill="currentColor"
+                                          height="12px"
+                                          viewBox="0 0 16 16"
+                                          width="12px"
                                         >
-                                          <ForwardRef
-                                            className="eqsa6vb0 css-hoycps-InlineSvg-RemoveIcon enyz4ql0"
-                                            src="icon-circle-subtract"
-                                          >
-                                            <svg
-                                              className="eqsa6vb0 css-hoycps-InlineSvg-RemoveIcon enyz4ql0"
-                                              height="1em"
-                                              viewBox={Object {}}
-                                              width="1em"
-                                            >
-                                              <use
-                                                href="#test"
-                                                xlinkHref="#test"
-                                              />
-                                            </svg>
-                                          </ForwardRef>
-                                        </InlineSvg>
-                                      </Component>
-                                    </RemoveIcon>
+                                          <g>
+                                            <path
+                                              d="M8,16a8,8,0,1,1,8-8A8,8,0,0,1,8,16ZM8,1.53A6.47,6.47,0,1,0,14.47,8,6.47,6.47,0,0,0,8,1.53Z"
+                                            />
+                                            <path
+                                              d="M11.28,8.75H4.72a.75.75,0,1,1,0-1.5h6.56a.75.75,0,1,1,0,1.5Z"
+                                            />
+                                          </g>
+                                        </svg>
+                                      </IconSubtract>
+                                    </StyledIconRemove>
                                      
                                     Remove
                                   </span>
@@ -1002,33 +1002,33 @@ exports[`OrganizationTeamProjects Should render 1`] = `
                                   <span
                                     className="css-19gcr2f-ButtonLabel edwq9my1"
                                   >
-                                    <RemoveIcon>
-                                      <Component
-                                        className="css-1d2szfl-RemoveIcon eqsa6vb0"
+                                    <StyledIconRemove
+                                      circle={true}
+                                      size="xs"
+                                    >
+                                      <IconSubtract
+                                        circle={true}
+                                        className="css-3hmlb1-StyledIconRemove eqsa6vb0"
+                                        size="xs"
                                       >
-                                        <InlineSvg
-                                          className="css-1d2szfl-RemoveIcon eqsa6vb0"
-                                          src="icon-circle-subtract"
+                                        <svg
+                                          className="css-3hmlb1-StyledIconRemove eqsa6vb0"
+                                          fill="currentColor"
+                                          height="12px"
+                                          viewBox="0 0 16 16"
+                                          width="12px"
                                         >
-                                          <ForwardRef
-                                            className="eqsa6vb0 css-hoycps-InlineSvg-RemoveIcon enyz4ql0"
-                                            src="icon-circle-subtract"
-                                          >
-                                            <svg
-                                              className="eqsa6vb0 css-hoycps-InlineSvg-RemoveIcon enyz4ql0"
-                                              height="1em"
-                                              viewBox={Object {}}
-                                              width="1em"
-                                            >
-                                              <use
-                                                href="#test"
-                                                xlinkHref="#test"
-                                              />
-                                            </svg>
-                                          </ForwardRef>
-                                        </InlineSvg>
-                                      </Component>
-                                    </RemoveIcon>
+                                          <g>
+                                            <path
+                                              d="M8,16a8,8,0,1,1,8-8A8,8,0,0,1,8,16ZM8,1.53A6.47,6.47,0,1,0,14.47,8,6.47,6.47,0,0,0,8,1.53Z"
+                                            />
+                                            <path
+                                              d="M11.28,8.75H4.72a.75.75,0,1,1,0-1.5h6.56a.75.75,0,1,1,0,1.5Z"
+                                            />
+                                          </g>
+                                        </svg>
+                                      </IconSubtract>
+                                    </StyledIconRemove>
                                      
                                     Remove
                                   </span>
