@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {IconSearch} from 'app/icons';
-import InlineSvg from 'app/components/inlineSvg';
+import {IconClose, IconSearch} from 'app/icons';
 import Input from 'app/components/forms/input';
 import space from 'app/styles/space';
 
@@ -44,7 +43,7 @@ const SearchField = styled(Input)`
   padding-left: ${space(4)};
   padding-right: ${space(4)};
 `;
-const SearchReset = styled(props => <InlineSvg src="icon-circle-close" {...props} />)`
+const SearchReset = styled(props => <IconClose {...props} />)`
   color: ${p => p.theme.gray2};
   position: absolute;
   z-index: 1;
