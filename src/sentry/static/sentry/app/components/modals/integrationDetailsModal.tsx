@@ -16,6 +16,7 @@ import PluginIcon from 'app/plugins/components/pluginIcon';
 import SentryTypes from 'app/sentryTypes';
 import Tag from 'app/views/settings/components/tag';
 import Tooltip from 'app/components/tooltip';
+import {IconClose} from 'app/icons';
 import marked, {singleLineRenderer} from 'app/utils/marked';
 import space from 'app/styles/space';
 import {IntegrationDetailsModalOptions} from 'app/actionCreators/modal';
@@ -110,7 +111,7 @@ class IntegrationDetailsModal extends React.Component<Props> {
     if (!provider.canAdd && metadata.aspects.externalInstall) {
       alerts.push({
         type: 'warning',
-        icon: 'icon-exit',
+        icon: <IconClose />,
         text: metadata.aspects.externalInstall.noticeText,
       });
     }

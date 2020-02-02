@@ -428,7 +428,7 @@ class Sidebar extends React.Component {
                           evt
                         )
                       }
-                      icon={<InlineSvg src="icon-releases" />}
+                      icon={<IconReleases size="md" />}
                       label={t('Releases v2')}
                       to={`/organizations/${organization.slug}/releases-v2/`}
                       id="releasesv2"

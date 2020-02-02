@@ -22,7 +22,7 @@ exports[`AlertLink renders with icon 1`] = `
   to="/settings/accounts/notifications"
 >
   <IconWrapper>
-    icon-mail
+    <IconMail />
   </IconWrapper>
   <AlertLinkText>
     This is an external link button
